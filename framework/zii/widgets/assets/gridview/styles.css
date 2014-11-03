@@ -26,14 +26,13 @@
 .grid-view table.items th
 {
 	color: white;
-	background: url("bg.gif") repeat-x scroll left top white;
+	background: url("/images/menu_bg.png") repeat-x scroll left top white;
 	text-align: center;
 }
 
 .grid-view table.items th a
 {
 	color: #EEE;
-	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -87,7 +86,7 @@
 .grid-view .button-column
 {
 	text-align: center;
-	width: 60px;
+	width: 70px;
 }
 
 .grid-view .button-column img

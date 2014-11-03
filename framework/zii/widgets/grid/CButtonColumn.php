@@ -43,7 +43,7 @@ class CButtonColumn extends CGridColumn
 	 * defines additional buttons, their IDs are also recognized here. For example, if a button named 'preview'
 	 * is declared in {@link buttons}, we can use the token '{preview}' here to specify where to display the button.
 	 */
-	public $template='{view} {update} {delete}';
+	public $template='{view} {update}';
 	/**
 	 * @var string the label for the view button. Defaults to "View".
 	 * Note that the label will not be HTML-encoded when rendering.
@@ -197,11 +197,11 @@ class CButtonColumn extends CGridColumn
 		if($this->deleteButtonLabel===null)
 			$this->deleteButtonLabel=Yii::t('zii','Delete');
 		if($this->viewButtonImageUrl===null)
-			$this->viewButtonImageUrl=$this->grid->baseScriptUrl.'/view.png';
+			$this->viewButtonImageUrl=Yii::app()->baseUrl . '/images/icons/view.png';
 		if($this->updateButtonImageUrl===null)
-			$this->updateButtonImageUrl=$this->grid->baseScriptUrl.'/update.png';
+			$this->updateButtonImageUrl=Yii::app()->baseUrl . '/images/icons/edit.png';
 		if($this->deleteButtonImageUrl===null)
-			$this->deleteButtonImageUrl=$this->grid->baseScriptUrl.'/delete.png';
+			$this->deleteButtonImageUrl=Yii::app()->baseUrl . '/images/icons/delete.png';
 		if($this->deleteConfirmation===null)
 			$this->deleteConfirmation=Yii::t('zii','Are you sure you want to delete this item?');
 

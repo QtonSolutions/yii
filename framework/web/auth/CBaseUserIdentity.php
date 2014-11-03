@@ -35,6 +35,8 @@ abstract class CBaseUserIdentity extends CComponent implements IUserIdentity
 	const ERROR_NONE=0;
 	const ERROR_USERNAME_INVALID=1;
 	const ERROR_PASSWORD_INVALID=2;
+        const ERROR_USER_DISABLED=3;
+        const ERROR_TOO_MANY_LOGINS=4;
 	const ERROR_UNKNOWN_IDENTITY=100;
 
 	/**
