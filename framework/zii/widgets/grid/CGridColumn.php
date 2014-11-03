@@ -194,6 +194,6 @@ abstract class CGridColumn extends CComponent
 	 */
 	protected function renderFilterCellContent()
 	{
-		echo $this->grid->blankDisplay;
+		echo CHtml::resetButton('Clear!', array('id'=>'form-reset-button'));
 	}
 }
