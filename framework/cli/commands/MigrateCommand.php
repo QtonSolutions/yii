@@ -456,7 +456,7 @@ class MigrateCommand extends CConsoleCommand
 		return CHtml::listData($db->createCommand()
 			->select('version, apply_time')
 			->from($this->migrationTable)
-			->order('apply_time DESC')
+			->order('apply_time DESC, version DESC')
 			->limit($limit)
 			->queryAll(), 'version', 'apply_time');
 	}
